@@ -2,14 +2,11 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "NativeGameplayTags.h"
 
-/**
- * 
- */
-class WARRIOR_API WarriorGameplayTags
+namespace WarriorGameplayTags
 {
-public:
-	WarriorGameplayTags();
-	~WarriorGameplayTags();
-};
+	/** Input **/
+	WARRIOR_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Move)
+	WARRIOR_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Look)
+}
